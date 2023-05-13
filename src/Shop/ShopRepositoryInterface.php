@@ -23,4 +23,6 @@ interface ShopRepositoryInterface
      * @deprecated tag:v1.0.0 - Will only accept ShopInterface as paramater
      */
     public function deleteShop(ShopInterface|ShopEntity $shop): void;
+
+    public function delete(string $shopId): void;
 }
