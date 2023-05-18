@@ -29,7 +29,7 @@ class ResponseSigner
         );
     }
 
-    private function sign(string $message, string $secret): string
+    public function sign(string $message, string $secret): string
     {
         return hash_hmac('sha256', $message, $secret);
     }
